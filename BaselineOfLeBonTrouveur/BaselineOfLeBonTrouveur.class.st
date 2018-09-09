@@ -1,3 +1,9 @@
+"
+Metacello new
+    baseline: #LeBonTrouveur;
+    repository: 'github://Ducasse/LeBonTrouveur';
+    load
+"
 Class {
 	#name : #BaselineOfLeBonTrouveur,
 	#superclass : #BaselineOf,
@@ -8,8 +14,18 @@ Class {
 BaselineOfLeBonTrouveur >> baseline: spec [
 	<baseline>
 
+	
 	spec for: #pharo do: [		
+				
+		spec
+			project: 'XPath'
+			with: [ spec
+						className: #ConfigurationOfXPath;
+						versionString: #stable;
+						repository: 'http://smalltalkhub.com/mc/PharoExtras/XPath/main/' ].
+
 		spec 
-			package: 'LeBonTrouveur'.
+			package: 'LeBonTrouveur'	with:
+					[ spec requires: #('XPath') ]
 		]
 ]
