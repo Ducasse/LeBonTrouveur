@@ -46,7 +46,7 @@ LBCRecherche class >> initializeDBStructure [
 
 	"pour l'instant une simple collection"
 
-	^ RechercheDB := OrderedCollection new
+	RechercheDB := OrderedCollection new
 
 	"plus tard surement un dictionnaire pour permettre de mieux indexer"
 ]
