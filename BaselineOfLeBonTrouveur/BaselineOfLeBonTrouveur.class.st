@@ -1,9 +1,3 @@
-"
-Metacello new
-    baseline: #LeBonTrouveur;
-    repository: 'github://Ducasse/LeBonTrouveur';
-    load
-"
 Class {
 	#name : #BaselineOfLeBonTrouveur,
 	#superclass : #BaselineOf,
@@ -24,17 +18,13 @@ BaselineOfLeBonTrouveur >> baseline: spec [
 						versionString: #stable;
 						repository: 'http://smalltalkhub.com/mc/PharoExtras/XPath/main/' ].
 					
-		"spec
+		spec
 			baseline: 'Ztimestamp'
-			with: [ spec repository: 'github://svenvc/ztimestamp/repository/' ].	
-		Ztimestamp does not have a baseline.... so no idea how to express it. 
-		
-		"	
+			with: [ spec repository: 'github://Ducasse/ztimestamp/repository/' ].		
 				
 				
 		spec 
 			package: 'LeBonTrouveur'	with:
-				"[ spec requires: #('XPath' 'Ztimestamp') ]"	
-				[ spec requires: #('XPath') ]
+					[ spec requires: #('XPath' 'Ztimestamp') ]
 		]
 ]
