@@ -19,12 +19,12 @@ BaselineOfLeBonTrouveur >> baseline: spec [
 						repository: 'http://smalltalkhub.com/mc/PharoExtras/XPath/main/' ].
 					
 		spec
-			baseline: 'Ztimestamp'
+			baseline: 'ZTimestamp'
 			with: [ spec repository: 'github://Ducasse/ztimestamp:AddingBaseline/repository/' ].		
 				
 				
 		spec 
 			package: 'LeBonTrouveur'	with:
-					[ spec requires: #('XPath' 'Ztimestamp') ]
+					[ spec requires: #('XPath' 'ZTimestamp') ]
 		]
 ]
