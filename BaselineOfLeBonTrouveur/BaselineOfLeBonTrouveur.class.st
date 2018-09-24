@@ -20,7 +20,7 @@ BaselineOfLeBonTrouveur >> baseline: spec [
 					
 		spec
 			baseline: 'Ztimestamp'
-			with: [ spec repository: 'github://svenvc/ztimestamp/repository/' ].		
+			with: [ spec repository: 'github://Ducasse/ztimestamp:AddingBaseline/repository/' ].		
 				
 				
 		spec 
